@@ -14,8 +14,11 @@
 #include "MKL46Z4.h"                    // Device header
 
 void buttonsInitialize(void);
-void buttonsService(void);							//buttons' interrupt service procedure
+void buttonsService(void);
+void buttonsService3(void);//buttons' interrupt service procedure
 int32_t buttonRead(void);
+int32_t buttonRead3(void);
+
 
 
 #endif

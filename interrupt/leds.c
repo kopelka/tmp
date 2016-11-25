@@ -20,6 +20,11 @@ const unsigned char PHASE_A=0;						//FSM state Red=on Green=off
 const unsigned char PHASE_B=1;						//FSM state Red=off Green=on
 const unsigned char PHASE_C=2;						//FSM state Red=off Green=off
 
+const unsigned char PHASE_A3=3;
+const unsigned char PHASE_B3=4;
+const unsigned char PHASE_C3=5;
+
+unsigned char change3 =0;	
 unsigned char slowFSM =1;									//FSM speed control flag. Initialize to 1: fast
 unsigned char skipPhase = 0;							//Auxiliary variable to allow FSM slow mode					
 
@@ -121,7 +126,30 @@ unsigned char phaseC(void){
 	ledsOff();
 	return PHASE_A;								/*Return next state of FSM*/
 }
+unsigned char phaseA3(void){
+	ledsOff();
+	//ledRedOn();
+	ledGreenOn();
+	return PHASE_B;								/*Return next state of FSM*/
+}
 
+/*----------------------------------------------------------------------------
+ Function that moves FSM to phase B   
+ *----------------------------------------------------------------------------*/
+unsigned char phaseB3(void){
+	ledsOff();
+	//ledGreenOn();
+	ledRedOn();
+	return PHASE_C;								/*Return next state of FSM*/				
+}
+
+/*----------------------------------------------------------------------------
+ Function that moves FSM to phase C     
+ *----------------------------------------------------------------------------*/
+unsigned char phaseC3(void){
+	ledsOff();
+	return PHASE_A;								/*Return next state of FSM*/
+}
 /*----------------------------------------------------------------------------
  Function that stops FSM transitions     
  *----------------------------------------------------------------------------*/
@@ -155,7 +183,7 @@ void nextLedState (void) {
 			if( (skipPhase%3) != 0 ) return;		/* Every third call passes  to switch clause*/
 	}
 	/**/
-	
+	if(change3 == 0){
 	switch(phase){
 		case PHASE_A:
 			phase=phaseA();
@@ -166,9 +194,22 @@ void nextLedState (void) {
 		default:
 			phase=phaseC();
 		  break;
-	}
-}
 
+	}
+}else {
+	switch(phase){
+		case PHASE_A3:
+			phase=phaseA3();
+			break;
+		case PHASE_B3:
+			phase=phaseB3();
+		  break;
+		default:
+			phase=phaseC3();
+		  break;
+}
+}
+}
 /*----------------------------------------------------------------------------
  Function controls transition speed of the FSM  
  *----------------------------------------------------------------------------*/
@@ -176,6 +217,9 @@ void fastSlowFSM(void){
 	
 	slowFSM^=1;				/* Toggle speed mode */
 
+}
+void change1(){
+		change3^=1;
 }
 
 
