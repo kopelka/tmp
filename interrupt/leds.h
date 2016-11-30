@@ -3,6 +3,7 @@
 #include "MKL46Z4.h"  
 
 void change1(void);
+void change2(void);
 void ledsInitialize(void);
 
 void ledsOff (void);

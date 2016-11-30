@@ -49,7 +49,7 @@ volatile int delay;
 	FPTE->PDDR = green_mask	;        /* enable PTB18/19 as Output */
 	
 	nextStateDelay=0;
-	phase=PHASE_A;
+	phase=PHASE_A3;
 	startFSM=1;
 
 //Welcome sequence
@@ -74,7 +74,7 @@ volatile int delay;
  *----------------------------------------------------------------------------*/
 void ledRedOn (void) {
 	FPTD->PCOR=red_mask;          	/* switch Red LED on */
-	FPTE->PSOR=green_mask;          /* switch Green LED off */
+	//FPTE->PSOR=green_mask;          /* switch Green LED off */
 }
 
 /*----------------------------------------------------------------------------
@@ -82,7 +82,7 @@ void ledRedOn (void) {
  *----------------------------------------------------------------------------*/
 void ledGreenOn (void) {
 	FPTE->PCOR=green_mask;       		/* switch Green LED on */
-	FPTD->PSOR=red_mask;          	/* switch Red LED off  */
+	//FPTD->PSOR=red_mask;          	/* switch Red LED off  */
 }
 
 /*----------------------------------------------------------------------------
@@ -107,6 +107,7 @@ void ledsOn (void) {
 unsigned char phaseA(void){
 	ledsOff();
 	ledRedOn();
+	ledGreenOn();
 	return PHASE_B;								/*Return next state of FSM*/
 }
 
@@ -115,6 +116,7 @@ unsigned char phaseA(void){
  *----------------------------------------------------------------------------*/
 unsigned char phaseB(void){
 	ledsOff();
+	//ledRedOn();
 	ledGreenOn();
 	return PHASE_C;								/*Return next state of FSM*/				
 }
@@ -123,6 +125,7 @@ unsigned char phaseB(void){
  Function that moves FSM to phase C     
  *----------------------------------------------------------------------------*/
 unsigned char phaseC(void){
+	//ledGreenOn();
 	ledsOff();
 	return PHASE_A;								/*Return next state of FSM*/
 }
@@ -130,7 +133,7 @@ unsigned char phaseA3(void){
 	ledsOff();
 	//ledRedOn();
 	ledGreenOn();
-	return PHASE_B;								/*Return next state of FSM*/
+	return PHASE_B3;								/*Return next state of FSM*/
 }
 
 /*----------------------------------------------------------------------------
@@ -140,7 +143,7 @@ unsigned char phaseB3(void){
 	ledsOff();
 	//ledGreenOn();
 	ledRedOn();
-	return PHASE_C;								/*Return next state of FSM*/				
+	return PHASE_C3;								/*Return next state of FSM*/				
 }
 
 /*----------------------------------------------------------------------------
@@ -148,7 +151,7 @@ unsigned char phaseB3(void){
  *----------------------------------------------------------------------------*/
 unsigned char phaseC3(void){
 	ledsOff();
-	return PHASE_A;								/*Return next state of FSM*/
+	return PHASE_A3;								/*Return next state of FSM*/
 }
 /*----------------------------------------------------------------------------
  Function that stops FSM transitions     
@@ -184,6 +187,7 @@ void nextLedState (void) {
 	}
 	/**/
 	if(change3 == 0){
+		//phase=PHASE_A;
 	switch(phase){
 		case PHASE_A:
 			phase=phaseA();
@@ -197,6 +201,7 @@ void nextLedState (void) {
 
 	}
 }else {
+	//phase=PHASE_A3;
 	switch(phase){
 		case PHASE_A3:
 			phase=phaseA3();
@@ -219,9 +224,11 @@ void fastSlowFSM(void){
 
 }
 void change1(){
-		change3^=1;
+		change3=0;
 }
-
+void change2(){
+		change3=2;
+}
 
 
 
