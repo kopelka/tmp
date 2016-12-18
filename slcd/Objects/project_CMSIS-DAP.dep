@@ -1,0 +1,60 @@
+Dependencies for Project 'project', Target 'CMSIS-DAP': (DO NOT MODIFY !)
+F (.\main.c)(0x58339102)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+I (leds.h)(0x561CF3EC)
+I (extra.h)(0x561D2276)
+I (buttons.h)(0x561D0B78)
+I (slcd.h)(0x58338AC0)
+F (.\leds.c)(0x561D4DCA)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\leds.o --omf_browse .\objects\leds.crf --depend .\objects\leds.d)
+I (leds.h)(0x561CF3EC)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+I (extra.h)(0x561D2276)
+F (.\slcd.c)(0x583390D8)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\slcd.o --omf_browse .\objects\slcd.crf --depend .\objects\slcd.d)
+I (slcd.h)(0x58338AC0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+I (extra.h)(0x561D2276)
+F (.\buttons.c)(0x561D2EB4)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\buttons.o --omf_browse .\objects\buttons.crf --depend .\objects\buttons.d)
+I (buttons.h)(0x561D0B78)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+F (.\extra.c)(0x561CED08)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\extra.o --omf_browse .\objects\extra.crf --depend .\objects\extra.d)
+I (extra.h)(0x561D2276)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
+F (RTE\Device\MKL46Z256xxx4\startup_MKL46Z4.s)(0x51C01318)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include--pd "__UVISION_VERSION SETA 521" --pd "_RTE_ SETA 1" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\startup_mkl46z4.lst --xref -o .\objects\startup_mkl46z4.o --depend .\objects\startup_mkl46z4.d)
+F (RTE\Device\MKL46Z256xxx4\system_MKL46Z4.c)(0x51C01318)(-c --cpu Cortex-M0+ -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\projects\slcd_tutorial\RTE-IC:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-IC:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DMKL46Z256xxx4-o .\objects\system_mkl46z4.o --omf_browse .\objects\system_mkl46z4.crf --depend .\objects\system_mkl46z4.d)
+I (C:\Keilv5\ARM\ARMCC\include\stdint.h)(0x574E9286)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\MKL46Z4.h)(0x51C01318)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0plus.h)(0x56260B6C)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625F7B0)
+I (C:\Keilv5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.3.0\Device\Include\system_MKL46Z4.h)(0x51C01318)
